@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     ToggleButton tb;
-    Switch sw;
+    Switch sw:
     Button bt;
     LinearLayout main;
 
@@ -32,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void go(View view) {
-
+        if (tb.isChecked() && sw.isChecked()) {
+            main.setBackgroundColor(Color.CYAN);
+        } else if (!tb.isChecked() && !sw.isChecked()) {
+            main.setBackgroundColor(Color.DKGRAY);
+        } else if (!tb.isChecked() && sw.isChecked()) {
+            main.setBackgroundColor(Color.MAGENTA);
+        } else {
+            main.setBackgroundColor(Color.GREEN);
+        }
     }
 }
