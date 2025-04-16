@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     ToggleButton tb;
-    Switch sw:
+    Switch sw;
     Button bt;
     LinearLayout main;
 
